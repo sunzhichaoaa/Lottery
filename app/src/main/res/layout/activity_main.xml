@@ -10,43 +10,185 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:textSize="18sp"
-            android:text="大乐透开奖结果">
-        </TextView>
-        <TextView
-            android:id="@+id/lottery_number1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="大乐透开奖结果"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+
             android:textSize="18sp"
-            android:text="asdasdd"/>
+            android:text="开奖结果：" />
+            <TextView
+                android:id="@+id/lottery_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/lottery_date_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖日期：" />
+            <TextView
+                android:id="@+id/lottery_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lottery_date_name"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/lottery_issue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖期数：" />
+            <TextView
+                android:id="@+id/lottery_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lottery_issue_name"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/lottery_openday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖时间：" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lottery_openday"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="每周一 、三 、六开奖"/>
+        </LinearLayout>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:textSize="18sp"
-            android:text="双色球开奖结果">
-        </TextView>
-        <TextView
-            android:id="@+id/lottery_number2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="双色球开奖结果"
+            android:textSize="18sp" />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="asdasdsadd"
-            android:textSize="18sp"/>
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/ssq_result_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖结果：" />
+            <TextView
+                android:id="@+id/ssq_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ssq_result_name"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/ssq_date_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖日期：" />
+            <TextView
+                android:id="@+id/ssq_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ssq_date_name"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖期数：" />
+            <TextView
+                android:id="@+id/ssq_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="开奖时间：" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="18sp"
+                android:text="每周二 、四 、日开奖"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

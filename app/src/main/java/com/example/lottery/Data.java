@@ -11,7 +11,7 @@ public class Data {
     private String area;
     private String result;
     private String periodicalnum;
-    private Date resulttime;
+    private String resulttime;
     private String openday;
     public void setLotchinesename(String lotchinesename) {
          this.lotchinesename = lotchinesename;
@@ -48,12 +48,13 @@ public class Data {
          return periodicalnum;
      }
 
-    public void setResulttime(Date resulttime) {
-         this.resulttime = resulttime;
-     }
-     public Date getResulttime() {
-         return resulttime;
-     }
+    public String getResulttime() {
+        return resulttime;
+    }
+
+    public void setResulttime(String resulttime) {
+        this.resulttime = resulttime;
+    }
 
     public void setOpenday(String openday) {
          this.openday = openday;
